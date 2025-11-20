@@ -10,3 +10,8 @@ PNA Proxy Extension 是一个款Chrome浏览器扩展插件，专门用于绕过
 4. **完整的XHR模拟**：正确模拟XMLHttpRequest的所有状态和事件
 5. **响应数据返回**：将服务器响应的原始数据正确返回给原始请求
 6. **错误处理完善**：提供完整的错误处理机制
+
+[PNA](https://wicg.github.io/private-network-access/#ip-address-space-heading)
+[private-network-access](https://developer.chrome.com/blog/private-network-access-update-2024-03?hl=zh-cn)
+
+**此插件只适用于网站不能或不想升级为https的场景，最终解是将网站升级为https**
