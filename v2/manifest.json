@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Transparent PNA Proxy",
+  "version": "1.0",
+  "host_permissions": [
+    "http://127.0.0.1/*",
+    "http://localhost/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["interceptor.js"],
+      "world": "MAIN", 
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_bridge.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
